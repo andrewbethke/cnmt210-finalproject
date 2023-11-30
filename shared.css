@@ -64,5 +64,29 @@ header nav a:last-child {
 }
 
 footer {
+    height: 5em;
     width: 100%;
+    padding: 1em;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+footer div p {
+    font-size: 1.5em;
+}
+
+footer nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    list-style: disc;
+}
+
+footer nav ul li a {
+    color: white;
 }
