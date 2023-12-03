@@ -1,0 +1,19 @@
+main {
+    display: block;
+    width: 64.166%;
+    background-color: #DDDDDD;
+    float: left;
+    margin: 2.5%;
+    padding: 1%;
+}
+
+h2 {
+    color: #BF3030;
+}
+
+aside {
+    width: 28.283%;
+    background-color: #888888;
+    float: left;
+    margin: 2.5% 0;
+}
