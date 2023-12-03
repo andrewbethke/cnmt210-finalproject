@@ -78,15 +78,14 @@ footer div p {
     font-size: 1.5em;
 }
 
-footer nav ul {
+footer ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     column-gap: 1em;
-    list-style: disc;
 }
 
-footer nav ul li a {
+footer a {
     color: white;
 }
