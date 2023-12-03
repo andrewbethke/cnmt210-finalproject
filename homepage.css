@@ -1,13 +1,16 @@
+main, aside {
+    padding: 1%;
+}
+
 main {
     display: block;
     width: 64.166%;
     background-color: #DDDDDD;
     float: left;
     margin: 2.5%;
-    padding: 1%;
 }
 
-h2 {
+main h2 {
     color: #BF3030;
 }
 
@@ -16,4 +19,13 @@ aside {
     background-color: #888888;
     float: left;
     margin: 2.5% 0;
+}
+
+aside h2 {
+    color: #721D1D;
+}
+
+aside img{
+    width: 80%;
+    margin: 0 10%;
 }
