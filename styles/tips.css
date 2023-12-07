@@ -1,0 +1,22 @@
+main {
+    display: block;
+    width: 90%;
+    padding: 2em;
+    margin: 3em 5%;
+    background-color: #888888;
+}
+
+h1 {
+    color: #BF3030;
+}
+
+main p {
+    color: #DDDDDD;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main form {
+    width: 90%;
+    margin: 0 5%;
+}
