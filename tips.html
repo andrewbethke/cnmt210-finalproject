@@ -36,23 +36,31 @@
         <h1>Tips</h1>
         <p>Do you have a news tip you think we'd be interested in? Let us know!</p>
         <form>
-            <label for="name">Name: </label>
-            <input name="name" type="text">
-
-            <label for="phone">Phone Number: </label>
-            <input name="phone" type="text">
-
+            <div id="top-row">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input name="name" id="name" type="text">
+                </div>
+                <div id="phone-container">
+                    <label for="phone">Phone Number</label><br>
+                    <input name="phone" id="phone" type="text">
+                </div>
+                <div id="email-container">
+                    <label for="email">Email Address<span class="red">*</span></label><br>
+                    <input name="email" id="email" type="email">
+                </div>
+            </div>
             <label for="address">Street Address: </label>
-            <input name="address" type="text">
+            <input name="address" id="address" type="text">
 
             <label for="state">State: </label>
-            <input name="state" type="text">
+            <input name="state" id="state" type="text">
 
-            <label for="main-text">Your Tip:</label>
-            <textarea name="main-text"></textarea>
+            <label for="main-text">Your Tip<span class="red">*</span>: </label>
+            <textarea name="main-text" id="main-text" required></textarea>
 
-            <label for="file-upload">File Upload:</label>
-            <input name="file-upload" type="file">
+            <label for="attachment">File Upload:</label>
+            <input name="attachment" id="attachment" type="file">
 
             <input type="submit">
         </form>
