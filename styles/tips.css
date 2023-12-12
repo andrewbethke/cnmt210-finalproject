@@ -23,9 +23,10 @@ main form {
     font-size: 1.5em;
 }
 
-input {
+input, textarea {
     font-size: 1em;
     width: 100%;
+    box-sizing: border-box;
 }
 
 label {
@@ -37,6 +38,14 @@ label {
     color: lightcoral;
 }
 
+#top-row, #second-row {
+    margin-bottom: 0.5em;
+    /* Needed to give the rows height; otherwise they end up with 0 height. */
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 #top-row div {
     width: 30%;
     float: left;
@@ -45,4 +54,40 @@ label {
 
 #top-row div:last-child {
     margin-right: 0;
+}
+
+#second-row div {
+    float: left;
+}
+
+#address-container {
+    width: 80%;
+    margin-right: 5%;
+}
+
+#state-container {
+    width: 15%;
+}
+
+textarea {
+    resize: vertical;
+    font-family: inherit;
+    margin-bottom: 0.5em;
+}
+
+#upload-container {
+    width: 30%;
+    margin: 0 auto 0.5em;
+    text-align: center;
+}
+
+#upload-container input {
+    color: white;
+}
+
+input[type=submit] {
+    width: 25%;
+    /* For some reason margin: 0 auto; doesn't work here? I can calculate it so
+    it's fine but it seems weird. */
+    margin: 0 37.5%; 
 }

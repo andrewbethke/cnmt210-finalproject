@@ -37,7 +37,7 @@
         <p>Do you have a news tip you think we'd be interested in? Let us know!</p>
         <form>
             <div id="top-row">
-                <div>
+                <div id="name-container">
                     <label for="name">Name</label><br>
                     <input name="name" id="name" type="text">
                 </div>
@@ -47,20 +47,28 @@
                 </div>
                 <div id="email-container">
                     <label for="email">Email Address<span class="red">*</span></label><br>
-                    <input name="email" id="email" type="email">
+                    <input name="email" id="email" type="email" required>
                 </div>
             </div>
-            <label for="address">Street Address: </label>
-            <input name="address" id="address" type="text">
 
-            <label for="state">State: </label>
-            <input name="state" id="state" type="text">
+            <div id="second-row">
+                <div id="address-container">
+                    <label for="address">Street Address</label>
+                    <input name="address" id="address" type="text">
+                </div>
+                <div id="state-container">
+                    <label for="state">State/Province</label>
+                    <input name="state" id="state" type="text">
+                </div>
+            </div>
 
-            <label for="main-text">Your Tip<span class="red">*</span>: </label>
+            <label for="main-text">Your Tip<span class="red">*</span></label><br>
             <textarea name="main-text" id="main-text" required></textarea>
 
-            <label for="attachment">File Upload:</label>
-            <input name="attachment" id="attachment" type="file">
+            <div id="upload-container">
+                <label for="attachment">File Upload</label>
+                <input name="attachment" id="attachment" type="file">
+            </div>
 
             <input type="submit">
         </form>
