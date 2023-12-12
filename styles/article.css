@@ -1,0 +1,79 @@
+article {
+    width: 66.667%;
+    padding: 1.5%;
+    margin: 4em auto 2em;
+    background-color: #DDDDDD;
+}
+
+article header {
+    height: 20em;
+}
+
+#lede-image {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin-right: 1em;
+}
+
+#lede-image img {
+    height: 100%;
+}
+
+#lede-image figcaption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25em;
+    border-radius: 0.25em;
+    position: absolute;
+    left: 0.25em;
+    bottom: 0.25em;
+}
+
+h1 {
+    text-align: left;
+    color: #BF3030;
+}
+
+article header div p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#article-body {
+    padding: 0 3em;
+}
+
+#article-body p {
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 1280px){
+    article {
+        width: 80%;
+    }
+
+    article header {
+        height: auto;
+    }
+
+    #lede-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    #lede-image img {
+        width: 100%;
+    }
+
+    article header div {
+        padding: 1em 3em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    article {
+        width: 95%;
+    }
+}
