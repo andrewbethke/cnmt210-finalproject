@@ -51,11 +51,8 @@ html, body {
     font-size: 2em;
     display: block;
     padding: 0 0.25em;
-    border-right: 0.05em solid white;
-}
-
-#page-header nav a:last-child {
-    border: none;
+    border: solid white;
+    border-width: 0 0.025em;
 }
 
 footer {
