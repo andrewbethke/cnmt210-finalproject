@@ -1,5 +1,9 @@
 article {
-    width: 66.667%;
+    width: 60em;
+    /* On wider screens, using a percentage of the width gets too wide to easily
+    read. Instead, we can size the article relative to the user's font size and
+    prevent it from getting too wide by specifying a max-width.*/
+    max-width: 80%;
     padding: 1.5%;
     margin: 4em auto 2em;
     background-color: #DDDDDD;
@@ -33,6 +37,7 @@ article header {
 h1 {
     text-align: left;
     color: #BF3030;
+    margin-bottom: 0.25em;
 }
 
 article header div p {
@@ -46,15 +51,21 @@ article header div p {
 
 #article-body p {
     margin: 1em 0;
+    line-height: 1.5em;
 }
 
 @media screen and (max-width: 1280px){
     article {
-        width: 80%;
+        width: 95%;
+        max-width: 95%;
     }
 
     article header {
         height: auto;
+    }
+
+    h1 {
+        font-size: 3em;
     }
 
     #lede-image {
@@ -72,8 +83,12 @@ article header div p {
     }
 }
 
-@media screen and (max-width: 768px){
-    article {
-        width: 95%;
+@media screen and (max-width: 768px) {
+    article header div {
+        padding: 1em;
+    }
+
+    #article-body {
+        padding: 0 1em;
     }
 }
