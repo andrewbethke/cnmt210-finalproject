@@ -78,5 +78,6 @@ section h2 {
 @media screen and (max-width: 1280px) {
     section {
         width: 90%;
+        float: none;
     }
 }
