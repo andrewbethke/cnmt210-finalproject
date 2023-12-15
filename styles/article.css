@@ -46,7 +46,7 @@ article header div p {
 }
 
 #article-body {
-    padding: 0 3em;
+    padding: 0 5em;
 }
 
 #article-body p {
@@ -56,8 +56,8 @@ article header div p {
 
 @media screen and (max-width: 1280px){
     article {
-        width: 95%;
-        max-width: 95%;
+        width: 80%;
+        max-width: 80%;
     }
 
     article header {
@@ -84,6 +84,11 @@ article header div p {
 }
 
 @media screen and (max-width: 768px) {
+    article {
+        width: 95%;
+        max-width: 95%;
+    }
+
     article header div {
         padding: 1em;
     }
