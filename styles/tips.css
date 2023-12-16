@@ -2,7 +2,7 @@ main {
     display: block;
     width: 90%;
     padding: 2em;
-    margin: 3em 5%;
+    margin: 5em 5% 3em;
     background-color: #888888;
 }
 
@@ -73,16 +73,16 @@ textarea {
     resize: vertical;
     font-family: inherit;
     margin-bottom: 0.5em;
+    height: 6em;
 }
 
 #upload-container {
-    width: 30%;
-    margin: 0 auto 0.5em;
-    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 #upload-container input {
     color: white;
+    margin: auto;
 }
 
 input[type=submit] {
@@ -90,4 +90,23 @@ input[type=submit] {
     /* For some reason margin: 0 auto; doesn't work here? I can calculate it so
     it's fine but it seems weird. */
     margin: 0 37.5%; 
+}
+
+@media screen and (max-width: 768px) {
+    #top-row div, #second-row div {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    textarea {
+        height: 15em;
+    }
+
+    #upload-container {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 33%;
+    }
 }

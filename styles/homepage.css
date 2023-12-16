@@ -57,3 +57,10 @@ aside img{
     width: 80%;
     margin: 0 10%;
 }
+
+@media screen and (max-width: 768px) {
+    main, aside {
+        width: 95%;
+        margin: 2em 2.5%;
+    }
+}
