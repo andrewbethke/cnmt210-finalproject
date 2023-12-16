@@ -2,13 +2,16 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 2em 0;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 section {
+    min-width: 25em;
     width: 30%;
     height: auto;
     background-color: #AAAAAA;
-    padding: 2em;
+    padding: 2em 4em;
     align-self: flex-start;
 }
 
@@ -19,4 +22,34 @@ h1, h2 {
 
 section p {
     margin-bottom: 1em;
+}
+
+#staff {
+    padding: 2em 1em;
+}
+
+.staff-card {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.staff-card img {
+    width: 50%;
+    float: left;
+}
+
+.staff-card div {
+    height: auto;
+}
+
+.staff-card div h3 {
+    color: #CC3333;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
