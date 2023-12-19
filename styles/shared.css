@@ -8,7 +8,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: black;
-    font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 #page-header {
@@ -17,6 +17,7 @@ html, body {
     background-color: #BF3030;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 2em;
 }
 
@@ -25,11 +26,6 @@ html, body {
     height: 80%;
     width: auto;
     max-width: 80%;
-
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
 }
 
 #page-header nav {
@@ -41,6 +37,9 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* For the logo to be properly centered,
+    the nav needs to be outside the header.*/
     position: absolute;
     bottom: -2em;
 }
@@ -51,19 +50,22 @@ html, body {
     font-size: 2em;
     display: block;
     padding: 0 0.25em;
+    /* Used to add the dividers between links */
     border: solid white;
     border-width: 0 0.025em;
 }
 
 footer {
-    height: 5em;
     width: 100%;
     padding: 1em;
     background-color: #333333;
     color: white;
+
+    /* Keeps both pieces of the footer nicely centered.*/
     display: flex;
     justify-content: center;
-    gap: 2em;
+    column-gap: 2em;
+    flex-wrap: wrap;
 }
 
 footer div p {
@@ -71,7 +73,7 @@ footer div p {
 }
 
 footer ul {
-    height: 100%;
+    height: 3em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,20 +88,4 @@ h1, h2 {
     text-align: center;
     font-weight: bold;
     font-size: 3.5em;
-}
-
-@media screen and (max-width: 1280px) {
-    footer {
-        height: 10em;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    footer nav ul {
-        flex-direction: row;
-        gap: 3em;
-    }
-
-    footer div {
-        width: 100%;
-    }
 }
